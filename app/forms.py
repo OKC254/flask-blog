@@ -28,7 +28,7 @@ class LoginForm(Form):
         Required(),
         length(min=1, max=64)
     ])
-    remember_me = BooleanField('Remember me', default=False)
+    remember.ext.me = BooleanField('Remember me', default=False)
 
     def validate(form):
         """Validate login credentials.
